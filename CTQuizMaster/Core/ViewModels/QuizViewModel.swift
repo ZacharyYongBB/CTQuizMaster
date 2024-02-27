@@ -28,6 +28,7 @@ class QuizViewModel: ObservableObject {
     @Published private(set) var currentScore: Int = 0
     @Published private(set) var currentQn: Int = 0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
     
     private var tasks: [Task<Void, Never>] = []
     
@@ -48,7 +49,16 @@ class QuizViewModel: ObservableObject {
     }
     
     func onCorrect() {
-        currentScore += 1
+        switch difficulty {
+        case "easy":
+            currentScore += 1
+        case "medium":
+            currentScore += 2
+        case "hard":
+            currentScore += 3
+        default:
+            currentScore += 1
+        }
         currentQn += 1
     }
     
@@ -57,4 +67,7 @@ class QuizViewModel: ObservableObject {
         currentQn += 1
     }
     
+    func onQuizEnd(timeLeft: Int) {
+        currentScore += (timeLeft / 10)
+    }
 }

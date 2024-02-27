@@ -25,7 +25,7 @@ struct QuizView: View {
         ScrollView {
             headers
             if let quiz = vm.quiz {
-                QuestionView(quiz: quiz[vm.currentQn], vm: vm)
+                QuestionView(quiz: quiz[vm.currentQn], vm: vm, timeRemaining: timeRemaining)
             }
         }
         .onReceive(vm.timer, perform: { time in

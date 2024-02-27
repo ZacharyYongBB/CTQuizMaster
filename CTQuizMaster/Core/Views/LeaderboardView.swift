@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+    
+    var vm: QuizViewModel
+    
     var body: some View {
-        Rectangle()
+        VStack{
+            Text("HERE IS YOUR FINAL SCORE: \(vm.currentScore)")
+        }
     }
 }
 
-#Preview {
-    LeaderboardView()
-}
