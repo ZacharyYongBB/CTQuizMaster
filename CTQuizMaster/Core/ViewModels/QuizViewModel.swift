@@ -27,6 +27,7 @@ class QuizViewModel: ObservableObject {
     @Published private(set) var quiz: [Quiz]? = nil
     @Published private(set) var currentScore: Int = 0
     @Published private(set) var currentQn: Int = 0
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     private var tasks: [Task<Void, Never>] = []
     

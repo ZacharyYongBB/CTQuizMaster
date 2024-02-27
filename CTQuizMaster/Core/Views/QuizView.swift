@@ -12,6 +12,7 @@ struct QuizView: View {
     let difficulty: String
     @StateObject private var vm: QuizViewModel
     @State var isStarted: Bool = false
+    @State var timeRemaining = 100
     
     
     init(difficulty: String) {
@@ -26,6 +27,8 @@ struct QuizView: View {
                 .font(.title)
             Text("currentScore :\(vm.currentScore)")
                 .font(.subheadline)
+            Text("timeRemaining :\(timeRemaining)")
+                .font(.subheadline)
             if !isStarted {
                 Button("START") {
                     vm.difficulty = difficulty
@@ -37,6 +40,11 @@ struct QuizView: View {
                 QuestionView(quiz: quiz[vm.currentQn], vm: vm)
             }
         }
+        .onReceive(vm.timer, perform: { time in
+            if timeRemaining > 0 && isStarted {
+                timeRemaining -= 1
+            }
+        })
         .onDisappear {
             vm.cancelTasks()
         }
