@@ -11,6 +11,7 @@ struct QuestionView: View {
     
     var quiz: Quiz
     var vm: QuizViewModel
+    @State private var isShowingLeaderboard = false
     
     var body: some View {
         VStack {
@@ -20,7 +21,7 @@ struct QuestionView: View {
             ForEach(quiz.correctAndIncorrectAnswers, id: \.self) { x in
                 Button(x) {
                     if vm.currentQn == 9  {
-                        print("COMPLETE")
+                        isShowingLeaderboard.toggle()
                     } else {
                         if x == quiz.correctAnswer {
                             vm.onCorrect()
@@ -37,5 +38,8 @@ struct QuestionView: View {
         .frame(width: 300, height: 400, alignment: .center)
         .background(Color.red)
         .padding(20)
+        .sheet(isPresented: $isShowingLeaderboard) {
+            LeaderboardView()
+        }
     }
 }

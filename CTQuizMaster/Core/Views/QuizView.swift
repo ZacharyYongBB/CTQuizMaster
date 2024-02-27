@@ -23,19 +23,7 @@ struct QuizView: View {
     
     var body: some View {
         ScrollView {
-            Text(difficulty)
-                .font(.title)
-            Text("currentScore :\(vm.currentScore)")
-                .font(.subheadline)
-            Text("timeRemaining :\(timeRemaining)")
-                .font(.subheadline)
-            if !isStarted {
-                Button("START") {
-                    vm.difficulty = difficulty
-                    vm.fetchQuizes()
-                    isStarted = true
-                }
-            }
+            headers
             if let quiz = vm.quiz {
                 QuestionView(quiz: quiz[vm.currentQn], vm: vm)
             }
@@ -54,4 +42,24 @@ struct QuizView: View {
 
 #Preview {
     QuizView(difficulty: "HARD")
+}
+
+extension QuizView {
+    private var headers: some View {
+        VStack {
+            Text(difficulty)
+                .font(.title)
+            Text("currentScore :\(vm.currentScore)")
+                .font(.subheadline)
+            Text("timeRemaining :\(timeRemaining)")
+                .font(.subheadline)
+            if !isStarted {
+                Button("START") {
+                    vm.difficulty = difficulty
+                    vm.fetchQuizes()
+                    isStarted = true
+                }
+            }
+        }
+    }
 }
