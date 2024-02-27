@@ -23,11 +23,13 @@ struct Quiz: Identifiable, Decodable, Hashable {
     let type: TypeEnum?
     let difficulty: Difficulty?
     let category, question, correctAnswer: String
-    let incorrectAnswers: [String]?
+    let incorrectAnswers: [String]
+    let correctAndIncorrectAnswers: [String] 
     
     var id: String {
         question + correctAnswer
     }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -36,16 +38,15 @@ struct Quiz: Identifiable, Decodable, Hashable {
         category = try container.decodeIfPresent(String.self, forKey: .category) ?? ""
         question = try container.decodeIfPresent(String.self, forKey: .question) ?? ""
         correctAnswer = try container.decodeIfPresent(String.self, forKey: .correctAnswer) ?? ""
-        incorrectAnswers = try container.decodeIfPresent([String].self, forKey: .incorrectAnswers)
+        incorrectAnswers = try container.decodeIfPresent([String].self, forKey: .incorrectAnswers) ?? []
+        
+        correctAndIncorrectAnswers = [correctAnswer] + incorrectAnswers
     }
-    
-    
     
     enum CodingKeys: String, CodingKey {
         case type, difficulty, category, question, correctAnswer = "correct_answer", incorrectAnswers = "incorrect_answers", id
     }
 }
-
 enum Difficulty: String, Decodable {
     case easy
     case hard

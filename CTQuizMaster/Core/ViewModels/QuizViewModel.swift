@@ -16,6 +16,8 @@ class QuizViewModel: ObservableObject {
         self.difficulty = difficulty
         self.quiz = quiz
         self.tasks = tasks
+        self.currentScore = currentScore
+        self.currentQn = currentQn
     }
     
     var quizService: QuizService {
@@ -23,6 +25,9 @@ class QuizViewModel: ObservableObject {
     }
     
     @Published private(set) var quiz: [Quiz]? = nil
+    @Published private(set) var currentScore: Int = 0
+    @Published private(set) var currentQn: Int = 0
+    
     private var tasks: [Task<Void, Never>] = []
     
     func cancelTasks() {
@@ -34,11 +39,21 @@ class QuizViewModel: ObservableObject {
         let task = Task {
             do {
                 quiz = try await quizService.getQuiz()
-                print(quiz)
             } catch {
                 print(error)
             }
         }
         tasks.append(task)
     }
+    
+    func onCorrect() {
+        currentScore += 1
+        currentQn += 1
+    }
+    
+    func onWrong() {
+        currentScore -= 1
+        currentQn += 1
+    }
+    
 }

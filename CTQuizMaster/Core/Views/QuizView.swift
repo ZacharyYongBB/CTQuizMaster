@@ -24,6 +24,8 @@ struct QuizView: View {
         ScrollView {
             Text(difficulty)
                 .font(.title)
+            Text("currentScore :\(vm.currentScore)")
+                .font(.subheadline)
             if !isStarted {
                 Button("START") {
                     vm.difficulty = difficulty
@@ -32,12 +34,9 @@ struct QuizView: View {
                 }
             }
             if let quiz = vm.quiz {
-                ForEach(quiz) { quiz in
-                    QuestionView(quiz: quiz)
-                }
+                QuestionView(quiz: quiz[vm.currentQn], vm: vm)
             }
         }
-        
         .onDisappear {
             vm.cancelTasks()
         }

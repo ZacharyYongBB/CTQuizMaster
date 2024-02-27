@@ -10,26 +10,32 @@ import SwiftUI
 struct QuestionView: View {
     
     var quiz: Quiz
-    @State private var shuffledOptions: [String] = []
-    
-    init(quiz: Quiz) {
-        self.quiz = quiz
-        let quizOptions = [quiz.correctAnswer] + (quiz.incorrectAnswers ?? [])
-        self._shuffledOptions = State(initialValue: quizOptions.shuffled())
-    }
+    var vm: QuizViewModel
     
     var body: some View {
         VStack {
+            Spacer()
             Text(quiz.question)
-            
-            ForEach(shuffledOptions, id: \.self) { option in
-                Button(option) {
-                    // Handle button tap
+            Spacer()
+            ForEach(quiz.correctAndIncorrectAnswers, id: \.self) { x in
+                Button(x) {
+                    if vm.currentQn == 9  {
+                        print("COMPLETE")
+                    } else {
+                        if x == quiz.correctAnswer {
+                            vm.onCorrect()
+                        } else {
+                            vm.onWrong()
+                        }
+                    }
+                    
                 }
             }
+            
+            Spacer()
         }
-        .frame(height: 400, alignment: .center)
+        .frame(width: 300, height: 400, alignment: .center)
         .background(Color.red)
+        .padding(20)
     }
 }
-
