@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     var difficulties: [String] = ["easy", "medium", "hard"]
-
+    
     
     var body: some View {
         NavigationStack {

@@ -42,7 +42,7 @@ struct Quiz: Identifiable, Decodable, Hashable {
     
     
     enum CodingKeys: String, CodingKey {
-        case type, difficulty, category, question, correctAnswer, incorrectAnswers, id
+        case type, difficulty, category, question, correctAnswer = "correct_answer", incorrectAnswers = "incorrect_answers", id
     }
 }
 

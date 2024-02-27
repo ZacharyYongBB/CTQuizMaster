@@ -11,28 +11,37 @@ struct QuizView: View {
     
     let difficulty: String
     @StateObject private var vm: QuizViewModel
+    @State var isStarted: Bool = false
+    
     
     init(difficulty: String) {
         self.difficulty = difficulty
         self._vm = StateObject(wrappedValue: QuizViewModel(difficulty: difficulty, tasks: []))
     }
     
+    
     var body: some View {
-        VStack {
+        ScrollView {
             Text(difficulty)
-            Button("START") {
-                vm.difficulty = difficulty
-                vm.fetchQuizes()
+                .font(.title)
+            if !isStarted {
+                Button("START") {
+                    vm.difficulty = difficulty
+                    vm.fetchQuizes()
+                    isStarted = true
+                }
             }
             if let quiz = vm.quiz {
-                ForEach(quiz) { q in
-                    Text(q.question)
+                ForEach(quiz) { quiz in
+                    QuestionView(quiz: quiz)
                 }
             }
         }
+        
         .onDisappear {
             vm.cancelTasks()
         }
+        
     }
 }
 
