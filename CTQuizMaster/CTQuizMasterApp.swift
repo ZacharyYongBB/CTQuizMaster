@@ -11,7 +11,7 @@ import SwiftUI
 struct CTQuizMasterApp: App {
     var body: some Scene {
         WindowGroup {
-            QuizView()
+            HomeView()
         }
     }
 }

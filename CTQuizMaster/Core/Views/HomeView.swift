@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct HomeView: View {
+    
+    var difficulties: [String] = ["easy", "medium", "hard"]
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                ForEach(difficulties, id: \.self) { d in
+                    NavigationLink(value: d) {
+                        Text("Go to \(d)")
+                    }
+                }
+            }
+            .navigationTitle("Quiz Master")
+            .navigationDestination(for: String.self) { value in
+                QuizView(difficulty: value)
+            }
+        }
     }
 }
 
+
 #Preview {
-    SwiftUIView()
+    HomeView()
 }

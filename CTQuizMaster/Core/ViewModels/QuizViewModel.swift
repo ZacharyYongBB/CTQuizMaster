@@ -11,7 +11,16 @@ import SwiftUI
 @MainActor
 class QuizViewModel: ObservableObject {
     
-    let quizService = QuizService()
+    var difficulty: String
+    init(difficulty: String, quiz: [Quiz]? = nil, tasks: [Task<Void, Never>]) {
+        self.difficulty = difficulty
+        self.quiz = quiz
+        self.tasks = tasks
+    }
+    
+    var quizService: QuizService {
+        return QuizService(difficulty: difficulty)
+    }
     
     @Published private(set) var quiz: [Quiz]? = nil
     private var tasks: [Task<Void, Never>] = []

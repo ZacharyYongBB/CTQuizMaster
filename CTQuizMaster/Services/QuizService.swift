@@ -8,9 +8,18 @@
 import Foundation
 
 actor QuizService {
-    let url = URL(string: "https://opentdb.com/api.php?amount=10")!
+    
+    init(difficulty: String) {
+        self.difficulty = difficulty
+    }
+    
+    var difficulty: String
 
     func getQuiz() async throws -> [Quiz] {
+        //sorry force unwrap
+        let url = URL(string: "https://opentdb.com/api.php?amount=10&difficulty=\(difficulty)")!
+        print(url)
+
         do {
             let (data, response) = try await URLSession.shared.data(from: url, delegate: nil)
             return try await parseQuizData(data: data, response: response)

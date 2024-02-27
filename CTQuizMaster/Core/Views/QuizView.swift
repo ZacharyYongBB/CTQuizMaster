@@ -9,20 +9,25 @@ import SwiftUI
 
 struct QuizView: View {
     
-    @StateObject private var vm = QuizViewModel()
+    let difficulty: String
+    @StateObject private var vm: QuizViewModel
+    
+    init(difficulty: String) {
+        self.difficulty = difficulty
+        self._vm = StateObject(wrappedValue: QuizViewModel(difficulty: difficulty, tasks: []))
+    }
     
     var body: some View {
         VStack {
-            Button("Start quiz") {
+            Text(difficulty)
+            Button("START") {
+                vm.difficulty = difficulty
                 vm.fetchQuizes()
             }
-            if let quizzes = vm.quiz {
-                ForEach(quizzes) { q in
+            if let quiz = vm.quiz {
+                ForEach(quiz) { q in
                     Text(q.question)
-                    Spacer()
                 }
-            } else {
-                Text("🤔")
             }
         }
         .onDisappear {
@@ -32,5 +37,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView()
+    QuizView(difficulty: "HARD")
 }

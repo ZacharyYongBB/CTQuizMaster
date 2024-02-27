@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F42332B8DF18700AF3270 /* HomeView.swift */; };
 		B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */; };
 		B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2DB2B8C57820075DC5D /* QuizView.swift */; };
 		B657F2DE2B8C57830075DC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B657F2DD2B8C57830075DC5D /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B63F42332B8DF18700AF3270 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B657F2D62B8C57820075DC5D /* CTQuizMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTQuizMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTQuizMasterApp.swift; sourceTree = "<group>"; };
 		B657F2DB2B8C57820075DC5D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				B657F2DB2B8C57820075DC5D /* QuizView.swift */,
+				B63F42332B8DF18700AF3270 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */,
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
+				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,
 				B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */,
 				B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */,

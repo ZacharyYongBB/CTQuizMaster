@@ -19,7 +19,7 @@ struct QuizModel: Decodable {
 }
 
 // MARK: - Result
-struct Quiz: Identifiable, Decodable {
+struct Quiz: Identifiable, Decodable, Hashable {
     let type: TypeEnum?
     let difficulty: Difficulty?
     let category, question, correctAnswer: String
