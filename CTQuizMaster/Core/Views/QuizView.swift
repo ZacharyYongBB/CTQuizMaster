@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct QuizView: View {
+    
+    @StateObject private var vm = QuizViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Start quiz") {
+                vm.fetchQuizes()
+            }
+            if let quizzes = vm.quiz {
+                ForEach(quizzes) { q in
+                    Text(q.question)
+                    Spacer()
+                }
+            } else {
+                Text("🤔")
+            }
         }
-        .padding()
+        .onDisappear {
+            vm.cancelTasks()
+        }
     }
 }
 
