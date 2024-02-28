@@ -12,6 +12,7 @@ struct LeaderboardView: View {
     @State private var scores: [Int] = []
     @State private var showAlert: Bool = false
     @State private var isSaved: Bool = false
+    @State private var animate: Bool = false
     
     var body: some View {
         VStack {
@@ -55,16 +56,38 @@ struct LeaderboardView: View {
                         if maxScore >= 10 {
                             Image(systemName: "star")
                                 .badgesFormat(color: .yellow)
+                                .rotationEffect(animate ? .degrees(360) : .degrees(0))
+                                .onTapGesture {
+                                    withAnimation {
+                                        animate.toggle()
+                                    }
+                                }
                         }
                         if maxScore >= 20 {
                             Image(systemName: "graduationcap")
                                 .badgesFormat(color: .red)
+                                .rotationEffect(animate ? .degrees(360) : .degrees(0))
+                                .onTapGesture {
+                                    withAnimation {
+                                        animate.toggle()
+                                    }
+                                }
                         }
                         if maxScore >= 30 {
                             Image(systemName: "brain")
                                 .badgesFormat(color: .green)
+                                .rotationEffect(animate ? .degrees(360) : .degrees(0))
+                                .onTapGesture {
+                                    withAnimation {
+                                        animate.toggle()
+                                    }
+                                }
                         }
                     }
+                    .animation(.easeInOut, value: animate)
+                }
+                Button("Spin badges") {
+                    animate.toggle()
                 }
             }
             Spacer()
