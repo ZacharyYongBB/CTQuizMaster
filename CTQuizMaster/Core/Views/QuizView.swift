@@ -46,7 +46,7 @@ struct QuizView: View {
 
 extension QuizView {
     private var headers: some View {
-        VStack {
+        VStack (spacing: 15) {
             Text(difficulty)
                 .font(.title)
             Text("currentScore :\(vm.currentScore)")

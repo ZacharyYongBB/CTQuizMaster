@@ -48,12 +48,17 @@ struct HomeView: View {
 
 extension HomeView {
     private var gameDescription: some View {
-        VStack {
+        VStack (alignment: .center, spacing: 20) {
+            Text("Instructions")
+                .font(.title2)
+                .fontWeight(.bold)
             Text("easy questions are worth 1 pts each")
             Text("medium questions are worth 2 pts each")
             Text("hard questions are worth 3 pts each")
             Text("you have 100 seconds, time remaining / 10 = bonus pts")
         }
+        .font(.title3)
+        .multilineTextAlignment(.center)
         .padding()
     }
 }
