@@ -21,3 +21,9 @@ struct OptionButtonViewModifier: ViewModifier {
             .padding()
     }
 }
+
+extension View {
+    func optionButtonFormat() -> some View {
+        modifier(OptionButtonViewModifier())
+    }
+}

@@ -20,7 +20,7 @@ struct HomeView: View {
                 ForEach(difficulties, id: \.self) { d in
                     NavigationLink(value: d) {
                         Text("Attempt \(d)")
-                            .modifier(HomeButtonViewModifier())
+                            .homeButtonFormat()
                     }
                 }
                 Spacer()
@@ -28,7 +28,7 @@ struct HomeView: View {
                     LeaderboardView()
                 } label: {
                     Text("GO TO LEADERBOARD")
-                        .modifier(HomeButtonViewModifier())
+                        .homeButtonFormat()
                 }
 
                 Spacer()

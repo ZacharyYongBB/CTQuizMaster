@@ -22,3 +22,8 @@ struct HomeButtonViewModifier: ViewModifier {
     }
 }
 
+extension View {
+    func homeButtonFormat() -> some View {
+        modifier(HomeButtonViewModifier())
+    }
+}

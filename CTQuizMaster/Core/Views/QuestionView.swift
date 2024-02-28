@@ -37,7 +37,7 @@ struct QuestionView: View {
                     }
                 } label: {
                     Text(x)
-                        .modifier(OptionButtonViewModifier())
+                        .optionButtonFormat()
                 }
                 
             }
