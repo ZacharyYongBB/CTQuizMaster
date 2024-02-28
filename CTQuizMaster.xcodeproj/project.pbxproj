@@ -20,7 +20,19 @@
 		B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */; };
 		B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */; };
 		B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */; };
+		B66CCE1F2B8F0DE0001D405A /* CTQuizMaster_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */; };
+		B66CCE262B8F0ECE001D405A /* QuizViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B66CCE202B8F0DE0001D405A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B657F2CE2B8C57820075DC5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B657F2D52B8C57820075DC5D;
+			remoteInfo = CTQuizMaster;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B63F42332B8DF18700AF3270 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -37,10 +49,20 @@
 		B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonViewModifier.swift; sourceTree = "<group>"; };
 		B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonViewModifier.swift; sourceTree = "<group>"; };
 		B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewModifier.swift; sourceTree = "<group>"; };
+		B66CCE1C2B8F0DE0001D405A /* CTQuizMaster_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTQuizMaster_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTQuizMaster_Tests.swift; sourceTree = "<group>"; };
+		B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B657F2D32B8C57820075DC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66CCE192B8F0DE0001D405A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B657F2D82B8C57820075DC5D /* CTQuizMaster */,
+				B66CCE1D2B8F0DE0001D405A /* CTQuizMaster_Tests */,
 				B657F2D72B8C57820075DC5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B657F2D62B8C57820075DC5D /* CTQuizMaster.app */,
+				B66CCE1C2B8F0DE0001D405A /* CTQuizMaster_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +166,15 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		B66CCE1D2B8F0DE0001D405A /* CTQuizMaster_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */,
+				B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */,
+			);
+			path = CTQuizMaster_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +195,24 @@
 			productReference = B657F2D62B8C57820075DC5D /* CTQuizMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B66CCE1B2B8F0DE0001D405A /* CTQuizMaster_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66CCE222B8F0DE0001D405A /* Build configuration list for PBXNativeTarget "CTQuizMaster_Tests" */;
+			buildPhases = (
+				B66CCE182B8F0DE0001D405A /* Sources */,
+				B66CCE192B8F0DE0001D405A /* Frameworks */,
+				B66CCE1A2B8F0DE0001D405A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B66CCE212B8F0DE0001D405A /* PBXTargetDependency */,
+			);
+			name = CTQuizMaster_Tests;
+			productName = CTQuizMaster_Tests;
+			productReference = B66CCE1C2B8F0DE0001D405A /* CTQuizMaster_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +225,10 @@
 				TargetAttributes = {
 					B657F2D52B8C57820075DC5D = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					B66CCE1B2B8F0DE0001D405A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B657F2D52B8C57820075DC5D;
 					};
 				};
 			};
@@ -191,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				B657F2D52B8C57820075DC5D /* CTQuizMaster */,
+				B66CCE1B2B8F0DE0001D405A /* CTQuizMaster_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +258,13 @@
 			files = (
 				B657F2E12B8C57830075DC5D /* Preview Assets.xcassets in Resources */,
 				B657F2DE2B8C57830075DC5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66CCE1A2B8F0DE0001D405A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +289,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B66CCE182B8F0DE0001D405A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66CCE1F2B8F0DE0001D405A /* CTQuizMaster_Tests.swift in Sources */,
+				B66CCE262B8F0ECE001D405A /* QuizViewModel_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B66CCE212B8F0DE0001D405A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B657F2D52B8C57820075DC5D /* CTQuizMaster */;
+			targetProxy = B66CCE202B8F0DE0001D405A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B657F2E22B8C57830075DC5D /* Debug */ = {
@@ -408,6 +488,42 @@
 			};
 			name = Release;
 		};
+		B66CCE232B8F0DE0001D405A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D5H55Z4KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zachary.CTQuizMaster-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTQuizMaster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CTQuizMaster";
+			};
+			name = Debug;
+		};
+		B66CCE242B8F0DE0001D405A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D5H55Z4KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zachary.CTQuizMaster-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTQuizMaster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CTQuizMaster";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +541,15 @@
 			buildConfigurations = (
 				B657F2E52B8C57830075DC5D /* Debug */,
 				B657F2E62B8C57830075DC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B66CCE222B8F0DE0001D405A /* Build configuration list for PBXNativeTarget "CTQuizMaster_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66CCE232B8F0DE0001D405A /* Debug */,
+				B66CCE242B8F0DE0001D405A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

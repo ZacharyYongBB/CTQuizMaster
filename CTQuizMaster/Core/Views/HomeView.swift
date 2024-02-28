@@ -13,31 +13,31 @@ struct HomeView: View {
     
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                gameDescription
-                Spacer()
-                ForEach(difficulties, id: \.self) { d in
-                    NavigationLink(value: d) {
-                        Text("Attempt \(d)")
-                            .homeButtonFormat()
-                    }
-                }
-                Spacer()
-                NavigationLink {
-                    LeaderboardView()
-                } label: {
-                    Text("GO TO LEADERBOARD")
+        
+        VStack {
+            gameDescription
+            Spacer()
+            ForEach(difficulties, id: \.self) { d in
+                NavigationLink(value: d) {
+                    Text("Attempt \(d)")
                         .homeButtonFormat()
                 }
-
-                Spacer()
             }
-            .navigationTitle("Quiz Master")
-            .navigationDestination(for: String.self) { value in
-                QuizView(difficulty: value)
+            Spacer()
+            NavigationLink {
+                LeaderboardView()
+            } label: {
+                Text("GO TO LEADERBOARD")
+                    .homeButtonFormat()
             }
+            
+            Spacer()
         }
+        .navigationTitle("Quiz Master")
+        .navigationDestination(for: String.self) { value in
+            QuizView(difficulty: value)
+        }
+        
     }
 }
 
