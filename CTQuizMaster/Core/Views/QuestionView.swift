@@ -14,16 +14,17 @@ struct QuestionView: View {
     @State private var isShowingLeaderboard = false
     @State var timeRemaining: Int
     @Environment(\.presentationMode) var presentationMode
-
+    
     
     var body: some View {
         VStack {
             Spacer()
             Text(quiz.question)
                 .padding()
+                .foregroundStyle(.white)
             Spacer()
             ForEach(quiz.correctAndIncorrectAnswers, id: \.self) { x in
-                Button(x) {
+                Button {
                     if vm.currentQn == 9  {
                         isShowingLeaderboard.toggle()
                         vm.onQuizEnd(timeLeft: timeRemaining)
@@ -34,13 +35,17 @@ struct QuestionView: View {
                             vm.onWrong()
                         }
                     }
-                    
+                } label: {
+                    Text(x)
+                        .modifier(OptionButtonViewModifier())
                 }
+                
             }
             
             Spacer()
         }
-        .frame(width: 300, height: 400, alignment: .center)
+        .frame(height: 700, alignment: .center)
+        .frame(maxWidth: .infinity)
         .background(Color.red)
         .padding(20)
         .sheet(isPresented: $isShowingLeaderboard , onDismiss: {

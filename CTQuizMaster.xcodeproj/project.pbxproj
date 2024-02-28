@@ -17,6 +17,8 @@
 		B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2EE2B8C61010075DC5D /* QuizService.swift */; };
 		B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2F02B8C7A360075DC5D /* QuizModel.swift */; };
 		B66CCE102B8E33B2001D405A /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */; };
+		B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */; };
+		B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B657F2EE2B8C61010075DC5D /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
 		B657F2F02B8C7A360075DC5D /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonViewModifier.swift; sourceTree = "<group>"; };
+		B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		B657F2E92B8C5D2F0075DC5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B66CCE112B8EFEB4001D405A /* ViewModifiers */,
 				B657F2EB2B8C5E310075DC5D /* ViewModels */,
 				B657F2EA2B8C5D480075DC5D /* Views */,
 			);
@@ -123,6 +128,15 @@
 				B657F2EC2B8C5E4C0075DC5D /* QuizViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B66CCE112B8EFEB4001D405A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */,
+				B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +212,12 @@
 				B66CCE102B8E33B2001D405A /* LeaderboardView.swift in Sources */,
 				B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */,
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
+				B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */,
 				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
 				B63F42362B8E051000AF3270 /* QuestionView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,
 				B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */,
+				B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */,
 				B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

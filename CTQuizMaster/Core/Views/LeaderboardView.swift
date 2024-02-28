@@ -11,16 +11,20 @@ struct LeaderboardView: View {
     var vm: QuizViewModel?
     @State private var scores: [Int] = []
     @State private var showAlert: Bool = false
+    @State private var isSaved: Bool = false
     
     var body: some View {
         VStack {
             if let currentScore = vm?.currentScore {
                 Text("HERE IS YOUR FINAL SCORE: \(currentScore)")
-                Button("Save Score to Leaderboard") {
-                    if let score = vm?.currentScore {
-                        scores.append(score)
-                        UserDefaults.standard.set(scores, forKey: "scores")
-                        showAlert.toggle()
+                if !isSaved {
+                    Button("Save Score to Leaderboard") {
+                        if let score = vm?.currentScore {
+                            scores.append(score)
+                            UserDefaults.standard.set(scores, forKey: "scores")
+                            showAlert.toggle()
+                            isSaved = true
+                        }
                     }
                 }
             }
