@@ -19,6 +19,7 @@
 		B66CCE102B8E33B2001D405A /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */; };
 		B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */; };
 		B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */; };
+		B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonViewModifier.swift; sourceTree = "<group>"; };
 		B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonViewModifier.swift; sourceTree = "<group>"; };
+		B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */,
+				B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */,
 				B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */,
 			);
 			path = ViewModifiers;
@@ -214,6 +217,7 @@
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
 				B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */,
 				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
+				B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */,
 				B63F42362B8E051000AF3270 /* QuestionView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,
 				B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */,

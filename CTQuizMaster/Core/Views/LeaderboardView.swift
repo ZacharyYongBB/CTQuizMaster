@@ -15,6 +15,7 @@ struct LeaderboardView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             if let currentScore = vm?.currentScore {
                 Text("HERE IS YOUR FINAL SCORE: \(currentScore)")
                 if !isSaved {
@@ -40,6 +41,33 @@ struct LeaderboardView: View {
                     }
                 }
             }
+            Spacer()
+            
+            VStack {
+                Text("BADGES")
+                    .font(.title)
+                Text("10 pts to get a ⭐️")
+                Text("20 pts to get a 🎓")
+                Text("30 pts to get a 🧠")
+                if let maxScore = scores.max() {
+                    Text("max score : \(maxScore)")
+                    HStack (spacing: 40) {
+                        if maxScore >= 10 {
+                            Image(systemName: "star")
+                                .badgesFormat(color: .yellow)
+                        }
+                        if maxScore >= 20 {
+                            Image(systemName: "graduationcap")
+                                .badgesFormat(color: .red)
+                        }
+                        if maxScore >= 30 {
+                            Image(systemName: "brain")
+                                .badgesFormat(color: .green)
+                        }
+                    }
+                }
+            }
+            Spacer()
         }
         .alert(isPresented: $showAlert, content: {
             vm?.alertSaved() ?? Alert(title: Text("Score Saved"))
