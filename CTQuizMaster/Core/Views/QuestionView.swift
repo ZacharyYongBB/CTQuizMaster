@@ -29,10 +29,12 @@ struct QuestionView: View {
                         isShowingLeaderboard.toggle()
                         vm.onQuizEnd(timeLeft: timeRemaining)
                     } else {
-                        if x == quiz.correctAnswer {
-                            vm.onCorrect()
-                        } else {
-                            vm.onWrong()
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            if x == quiz.correctAnswer {
+                                vm.onCorrect()
+                            } else {
+                                vm.onWrong()
+                            }
                         }
                     }
                 } label: {
@@ -47,6 +49,7 @@ struct QuestionView: View {
         .frame(height: 700, alignment: .center)
         .frame(maxWidth: .infinity)
         .background(Color.red)
+        .cornerRadius(10)
         .padding(20)
         .sheet(isPresented: $isShowingLeaderboard , onDismiss: {
             presentationMode.wrappedValue.dismiss()
