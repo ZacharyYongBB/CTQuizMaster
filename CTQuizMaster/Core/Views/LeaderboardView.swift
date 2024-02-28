@@ -83,12 +83,16 @@ struct LeaderboardView: View {
                                     }
                                 }
                         }
+                        
                     }
                     .animation(.easeInOut, value: animate)
+                    if maxScore >= 10 {
+                        Button("Spin badges") {
+                            animate.toggle()
+                        }
+                    }
                 }
-                Button("Spin badges") {
-                    animate.toggle()
-                }
+                
             }
             Spacer()
         }
