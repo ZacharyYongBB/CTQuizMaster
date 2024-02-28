@@ -70,4 +70,8 @@ class QuizViewModel: ObservableObject {
     func onQuizEnd(timeLeft: Int) {
         currentScore += (timeLeft / 10)
     }
+    
+    func alertSaved() -> Alert {
+        Alert(title: Text("🚀Score Saved!"))
+    }
 }

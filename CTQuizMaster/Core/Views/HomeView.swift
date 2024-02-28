@@ -23,6 +23,13 @@ struct HomeView: View {
                     }
                 }
                 Spacer()
+                NavigationLink {
+                    LeaderboardView()
+                } label: {
+                    Text("GO TO LEADERBOARD")
+                }
+
+                Spacer()
             }
             .navigationTitle("Quiz Master")
             .navigationDestination(for: String.self) { value in
