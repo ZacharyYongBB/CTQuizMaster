@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  CTQuizMaster
+
+  Created by Zachary on 29/2/24.
+  
+*/
+
+"instructions" = "游戏规则";
+"easyDesc" = "EASY 题每题1分";
+"medDesc" = "MEDIUM 题每题2分";
+"hardDesc" = "HARD 题每题3分";
+"timeDesc" = "你有100秒，所剩时间 /10 = 时间分数";
+"gameTitle" = "测验大师 🧠";
+"attempt" = "挑战";
+"goToLeaderBoard" = "排行榜 🏆";
+

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  CTQuizMaster
+
+  Created by Zachary on 29/2/24.
+  
+*/
+
+"instructions" = "Instructions";
+"easyDesc" = "Easy questions are worth 1 pts each";
+"medDesc" = "Medium questions are worth 2 pts each";
+"hardDesc" = "Hard questions are worth 3 pts each";
+"timeDesc" = "you have 100 seconds, time remaining / 10 = bonus pts";
+"gameTitle" = "Quiz Master 🧠";
+"attempt" = "Attempt";
+"goToLeaderBoard" = "Go To Leaderboard 🏆";

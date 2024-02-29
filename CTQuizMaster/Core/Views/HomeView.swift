@@ -19,21 +19,25 @@ struct HomeView: View {
             Spacer()
             ForEach(difficulties, id: \.self) { d in
                 NavigationLink(value: d) {
-                    Text("Attempt \(d)")
-                        .homeButtonFormat()
+                    HStack {
+                        Text(LocalizedStringKey("attempt"))
+                        Text("\(d)")
+                            .textCase(.uppercase)
+                    }
+                    .homeButtonFormat(color: Color.red)
                 }
             }
             Spacer()
             NavigationLink {
                 LeaderboardView()
             } label: {
-                Text("GO TO LEADERBOARD")
-                    .homeButtonFormat()
+                Text(LocalizedStringKey("goToLeaderBoard"))
+                    .homeButtonFormat(color: Color.purple)
             }
             
             Spacer()
         }
-        .navigationTitle("Quiz Master")
+        .navigationTitle(LocalizedStringKey("gameTitle"))
         .navigationDestination(for: String.self) { value in
             QuizView(difficulty: value)
         }
@@ -49,13 +53,13 @@ struct HomeView: View {
 extension HomeView {
     private var gameDescription: some View {
         VStack (alignment: .center, spacing: 20) {
-            Text("Instructions")
+            Text(LocalizedStringKey("instructions"))
                 .font(.title2)
                 .fontWeight(.bold)
-            Text("easy questions are worth 1 pts each")
-            Text("medium questions are worth 2 pts each")
-            Text("hard questions are worth 3 pts each")
-            Text("you have 100 seconds, time remaining / 10 = bonus pts")
+            Text(LocalizedStringKey("easyDesc"))
+            Text(LocalizedStringKey("medDesc"))
+            Text(LocalizedStringKey("hardDesc"))
+            Text(LocalizedStringKey("timeDesc"))
         }
         .font(.title3)
         .multilineTextAlignment(.center)
