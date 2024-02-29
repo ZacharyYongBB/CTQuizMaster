@@ -19,6 +19,12 @@ struct LeaderboardView: View {
             Spacer()
             if let currentScore = vm?.currentScore {
                 Text("HERE IS YOUR FINAL SCORE: \(currentScore)")
+                Spacer()
+                ShareLink(item: URL(string: "https://google.com")!) {
+                    Text("Share Your Score! Tell your friends to beat your score of \(currentScore)")
+                }
+                
+                Spacer()
                 if !isSaved {
                     Button("Save Score to Leaderboard") {
                         if let score = vm?.currentScore {
@@ -28,6 +34,8 @@ struct LeaderboardView: View {
                             isSaved = true
                         }
                     }
+                    Spacer()
+                    
                 }
             }
             
