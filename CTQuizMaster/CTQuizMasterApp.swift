@@ -17,9 +17,7 @@ struct CTQuizMasterApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                HomeView()
-            }
+            RootView()
         }
     }
 }

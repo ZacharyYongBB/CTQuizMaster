@@ -9,8 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     
-    var difficulties: [String] = ["easy", "medium", "hard"]
+    @StateObject private var vm = HomeViewModel()
+    @Binding var showSignInView: Bool
     
+    var difficulties: [String] = ["easy", "medium", "hard"]
     
     var body: some View {
         
@@ -34,6 +36,19 @@ struct HomeView: View {
                 Text(LocalizedStringKey("goToLeaderBoard"))
                     .homeButtonFormat(color: Color.purple)
             }
+            Button {
+                Task {
+                    do {
+                        try vm.logOut()
+                        showSignInView = true
+                    } catch {
+                        print("log out failed \(error)")
+                    }
+                }
+            } label: {
+                Text(LocalizedStringKey("logOut"))
+            }
+            
             
             Spacer()
         }
@@ -47,7 +62,7 @@ struct HomeView: View {
 
 
 #Preview {
-    HomeView()
+    HomeView(showSignInView: .constant(true))
 }
 
 extension HomeView {

@@ -13,6 +13,15 @@
 		B64E78E32B906B8100CEA258 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64E78E22B906B8100CEA258 /* GoogleService-Info.plist */; };
 		B64E78E62B906C6400CEA258 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B64E78E52B906C6400CEA258 /* FirebaseAnalytics */; };
 		B64E78E82B906C6400CEA258 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B64E78E72B906C6400CEA258 /* FirebaseAnalyticsSwift */; };
+		B64E78EB2B906FE900CEA258 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B64E78EA2B906FE900CEA258 /* FirebaseAuth */; };
+		B64E78EF2B90707D00CEA258 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78EE2B90707D00CEA258 /* AuthView.swift */; };
+		B64E78F12B9075AC00CEA258 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78F02B9075AC00CEA258 /* AuthViewModel.swift */; };
+		B64E78F32B9076E700CEA258 /* TextFieldViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78F22B9076E700CEA258 /* TextFieldViewModifier.swift */; };
+		B64E78F62B9077BC00CEA258 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78F52B9077BC00CEA258 /* AuthManager.swift */; };
+		B64E78F82B9078B000CEA258 /* AuthDataResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78F72B9078AF00CEA258 /* AuthDataResModel.swift */; };
+		B64E78FA2B907C9D00CEA258 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78F92B907C9D00CEA258 /* RootView.swift */; };
+		B64E78FC2B907EF200CEA258 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78FB2B907EF200CEA258 /* HomeViewModel.swift */; };
+		B64E78FE2B908A4400CEA258 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E78FD2B908A4400CEA258 /* CreateAccountView.swift */; };
 		B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */; };
 		B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2DB2B8C57820075DC5D /* QuizView.swift */; };
 		B657F2DE2B8C57830075DC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B657F2DD2B8C57830075DC5D /* Assets.xcassets */; };
@@ -44,6 +53,14 @@
 		B64E78DF2B9055C700CEA258 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B64E78E12B9055CB00CEA258 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B64E78E22B906B8100CEA258 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B64E78EE2B90707D00CEA258 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		B64E78F02B9075AC00CEA258 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B64E78F22B9076E700CEA258 /* TextFieldViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModifier.swift; sourceTree = "<group>"; };
+		B64E78F52B9077BC00CEA258 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B64E78F72B9078AF00CEA258 /* AuthDataResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResModel.swift; sourceTree = "<group>"; };
+		B64E78F92B907C9D00CEA258 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B64E78FB2B907EF200CEA258 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B64E78FD2B908A4400CEA258 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		B657F2D62B8C57820075DC5D /* CTQuizMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTQuizMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTQuizMasterApp.swift; sourceTree = "<group>"; };
 		B657F2DB2B8C57820075DC5D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -67,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64E78E82B906C6400CEA258 /* FirebaseAnalyticsSwift in Frameworks */,
+				B64E78EB2B906FE900CEA258 /* FirebaseAuth in Frameworks */,
 				B64E78E62B906C6400CEA258 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,12 +107,48 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B64E78E92B906FE900CEA258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64E78EC2B90703600CEA258 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				B657F2DB2B8C57820075DC5D /* QuizView.swift */,
+				B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */,
+				B63F42332B8DF18700AF3270 /* HomeView.swift */,
+				B63F42352B8E051000AF3270 /* QuestionView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		B64E78ED2B90704600CEA258 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B64E78EE2B90707D00CEA258 /* AuthView.swift */,
+				B64E78FD2B908A4400CEA258 /* CreateAccountView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B64E78F42B9077AA00CEA258 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B64E78F52B9077BC00CEA258 /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		B657F2CD2B8C57820075DC5D = {
 			isa = PBXGroup;
 			children = (
 				B657F2D82B8C57820075DC5D /* CTQuizMaster */,
 				B66CCE1D2B8F0DE0001D405A /* CTQuizMaster_Tests */,
 				B657F2D72B8C57820075DC5D /* Products */,
+				B64E78E92B906FE900CEA258 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				B657F2F02B8C7A360075DC5D /* QuizModel.swift */,
+				B64E78F72B9078AF00CEA258 /* AuthDataResModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +203,7 @@
 		B657F2E92B8C5D2F0075DC5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B64E78F42B9077AA00CEA258 /* Managers */,
 				B64E78DB2B90557700CEA258 /* Resources */,
 				B66CCE112B8EFEB4001D405A /* ViewModifiers */,
 				B657F2EB2B8C5E310075DC5D /* ViewModels */,
@@ -159,10 +215,9 @@
 		B657F2EA2B8C5D480075DC5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B657F2DB2B8C57820075DC5D /* QuizView.swift */,
-				B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */,
-				B63F42332B8DF18700AF3270 /* HomeView.swift */,
-				B63F42352B8E051000AF3270 /* QuestionView.swift */,
+				B64E78ED2B90704600CEA258 /* Auth */,
+				B64E78EC2B90703600CEA258 /* Quiz */,
+				B64E78F92B907C9D00CEA258 /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				B657F2EC2B8C5E4C0075DC5D /* QuizViewModel.swift */,
+				B64E78F02B9075AC00CEA258 /* AuthViewModel.swift */,
+				B64E78FB2B907EF200CEA258 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -181,6 +238,7 @@
 				B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */,
 				B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */,
 				B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */,
+				B64E78F22B9076E700CEA258 /* TextFieldViewModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -213,6 +271,7 @@
 			packageProductDependencies = (
 				B64E78E52B906C6400CEA258 /* FirebaseAnalytics */,
 				B64E78E72B906C6400CEA258 /* FirebaseAnalyticsSwift */,
+				B64E78EA2B906FE900CEA258 /* FirebaseAuth */,
 			);
 			productName = CTQuizMaster;
 			productReference = B657F2D62B8C57820075DC5D /* CTQuizMaster.app */;
@@ -305,15 +364,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66CCE102B8E33B2001D405A /* LeaderboardView.swift in Sources */,
+				B64E78FE2B908A4400CEA258 /* CreateAccountView.swift in Sources */,
+				B64E78FC2B907EF200CEA258 /* HomeViewModel.swift in Sources */,
+				B64E78F32B9076E700CEA258 /* TextFieldViewModifier.swift in Sources */,
 				B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */,
+				B64E78FA2B907C9D00CEA258 /* RootView.swift in Sources */,
+				B64E78EF2B90707D00CEA258 /* AuthView.swift in Sources */,
+				B64E78F62B9077BC00CEA258 /* AuthManager.swift in Sources */,
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
 				B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */,
 				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
+				B64E78F82B9078B000CEA258 /* AuthDataResModel.swift in Sources */,
 				B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */,
 				B63F42362B8E051000AF3270 /* QuestionView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,
 				B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */,
 				B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */,
+				B64E78F12B9075AC00CEA258 /* AuthViewModel.swift in Sources */,
 				B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +685,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B64E78E42B906C6400CEA258 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsSwift;
+		};
+		B64E78EA2B906FE900CEA258 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64E78E42B906C6400CEA258 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
