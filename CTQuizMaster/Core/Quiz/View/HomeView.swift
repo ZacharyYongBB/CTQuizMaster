@@ -67,7 +67,7 @@ struct HomeView: View {
 
 extension HomeView {
     private var gameDescription: some View {
-        VStack (alignment: .center, spacing: 20) {
+        VStack (alignment: .center, spacing: 5) {
             Text(LocalizedStringKey("instructions"))
                 .font(.title2)
                 .fontWeight(.bold)
@@ -76,8 +76,8 @@ extension HomeView {
             Text(LocalizedStringKey("hardDesc"))
             Text(LocalizedStringKey("timeDesc"))
         }
-        .font(.title3)
+        .font(.headline)
         .multilineTextAlignment(.center)
-        .padding()
+        .padding(3)
     }
 }

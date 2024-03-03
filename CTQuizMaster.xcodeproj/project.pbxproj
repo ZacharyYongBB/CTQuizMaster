@@ -37,6 +37,8 @@
 		B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */; };
 		B66CCE1F2B8F0DE0001D405A /* CTQuizMaster_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */; };
 		B66CCE262B8F0ECE001D405A /* QuizViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */; };
+		B6B1E6B12B94BF5600704F02 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1E6B02B94BF5600704F02 /* ProfileView.swift */; };
+		B6F0E4EE2B94C75B00D9062D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E4ED2B94C75B00D9062D /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		B66CCE1C2B8F0DE0001D405A /* CTQuizMaster_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTQuizMaster_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTQuizMaster_Tests.swift; sourceTree = "<group>"; };
 		B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel_Tests.swift; sourceTree = "<group>"; };
+		B6B1E6B02B94BF5600704F02 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B6F0E4ED2B94C75B00D9062D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B64E78F52B9077BC00CEA258 /* AuthManager.swift */,
+				B6F0E4ED2B94C75B00D9062D /* UserManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -169,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				B64E79082B94BD7000CEA258 /* Model */,
-				B64E78F42B9077AA00CEA258 /* Managers */,
 				B657F2EB2B8C5E310075DC5D /* ViewModel */,
 				B64E78ED2B90704600CEA258 /* View */,
 			);
@@ -187,6 +191,7 @@
 		B64E79092B94BDAD00CEA258 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				B6B1E6B22B94BF6000704F02 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 		B657F2CD2B8C57820075DC5D = {
 			isa = PBXGroup;
 			children = (
+				B64E78E22B906B8100CEA258 /* GoogleService-Info.plist */,
 				B657F2D82B8C57820075DC5D /* CTQuizMaster */,
 				B66CCE1D2B8F0DE0001D405A /* CTQuizMaster_Tests */,
 				B657F2D72B8C57820075DC5D /* Products */,
@@ -213,8 +219,8 @@
 		B657F2D82B8C57820075DC5D /* CTQuizMaster */ = {
 			isa = PBXGroup;
 			children = (
+				B64E78F42B9077AA00CEA258 /* Managers */,
 				B64E78DB2B90557700CEA258 /* Resources */,
-				B64E78E22B906B8100CEA258 /* GoogleService-Info.plist */,
 				B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */,
 				B657F2E92B8C5D2F0075DC5D /* Core */,
 				B657F2E82B8C5A020075DC5D /* Services */,
@@ -294,6 +300,14 @@
 				B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */,
 			);
 			path = CTQuizMaster_Tests;
+			sourceTree = "<group>";
+		};
+		B6B1E6B22B94BF6000704F02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1E6B02B94BF5600704F02 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,9 +432,11 @@
 				B64E78EF2B90707D00CEA258 /* AuthView.swift in Sources */,
 				B64E78F62B9077BC00CEA258 /* AuthManager.swift in Sources */,
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
+				B6F0E4EE2B94C75B00D9062D /* UserManager.swift in Sources */,
 				B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */,
 				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
 				B64E78F82B9078B000CEA258 /* AuthDataResModel.swift in Sources */,
+				B6B1E6B12B94BF5600704F02 /* ProfileView.swift in Sources */,
 				B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */,
 				B63F42362B8E051000AF3270 /* QuestionView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,

@@ -23,7 +23,7 @@ final class AuthViewModel: ObservableObject {
         
         do {
             let returnedUserData = try await AuthManager.shared.createUserEmailPw(email: email, password: password)
-            print("returned user data : \(returnedUserData)")
+            try await UserManager.shared.createNewUser(auth: returnedUserData)
             return true
         } catch {
             print("error : \(error)")
@@ -41,7 +41,6 @@ final class AuthViewModel: ObservableObject {
         
         do {
             let returnedUserData = try await AuthManager.shared.signInUser(email: email, password: password)
-            print("returned user data : \(returnedUserData)")
             return true
         } catch {
             print("error : \(error)")

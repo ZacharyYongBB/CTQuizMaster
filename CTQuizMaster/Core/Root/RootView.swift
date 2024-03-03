@@ -13,8 +13,19 @@ struct RootView: View {
     
     var body: some View {
         ZStack {
-            NavigationStack {
-                HomeView(showSignInView: $showSignInView)
+            TabView {
+                NavigationStack {
+                    HomeView(showSignInView: $showSignInView)
+                }
+                .tabItem {
+                    Image(systemName: "brain")
+                    Text("Quiz")
+                }
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person.circle")
+                        Text("Profile")
+                    }
             }
         }
         .onAppear {
