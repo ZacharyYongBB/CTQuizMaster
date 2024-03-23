@@ -31,13 +31,19 @@
 		B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2EC2B8C5E4C0075DC5D /* QuizViewModel.swift */; };
 		B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2EE2B8C61010075DC5D /* QuizService.swift */; };
 		B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657F2F02B8C7A360075DC5D /* QuizModel.swift */; };
+		B65B930F2B97507C00BEC5FE /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B930E2B97507C00BEC5FE /* EditProfileView.swift */; };
 		B66CCE102B8E33B2001D405A /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */; };
 		B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */; };
 		B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */; };
 		B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE162B8F06A2001D405A /* BadgesViewModifier.swift */; };
 		B66CCE1F2B8F0DE0001D405A /* CTQuizMaster_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */; };
 		B66CCE262B8F0ECE001D405A /* QuizViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */; };
+		B6A1B3EA2BAC909A005F6A67 /* CustomTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3E92BAC909A005F6A67 /* CustomTitleLabel.swift */; };
+		B6A1B3F72BACA0AC005F6A67 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3F62BACA0AC005F6A67 /* Date+Ext.swift */; };
+		B6A1B3F92BACD45A005F6A67 /* UILabelVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3F82BACD45A005F6A67 /* UILabelVR.swift */; };
+		B6A1B3FF2BAF0539005F6A67 /* UIProfilePicVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3FE2BAF0539005F6A67 /* UIProfilePicVR.swift */; };
 		B6B1E6B12B94BF5600704F02 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1E6B02B94BF5600704F02 /* ProfileView.swift */; };
+		B6C72DB22BA04EAC00C0A932 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C72DB12BA04EAC00C0A932 /* ProfileViewModel.swift */; };
 		B6F0E4EE2B94C75B00D9062D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0E4ED2B94C75B00D9062D /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +79,7 @@
 		B657F2EC2B8C5E4C0075DC5D /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
 		B657F2EE2B8C61010075DC5D /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
 		B657F2F02B8C7A360075DC5D /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		B65B930E2B97507C00BEC5FE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		B66CCE0F2B8E33B2001D405A /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		B66CCE122B8EFEE5001D405A /* OptionButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonViewModifier.swift; sourceTree = "<group>"; };
 		B66CCE142B8F0076001D405A /* HomeButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonViewModifier.swift; sourceTree = "<group>"; };
@@ -80,7 +87,12 @@
 		B66CCE1C2B8F0DE0001D405A /* CTQuizMaster_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTQuizMaster_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66CCE1E2B8F0DE0001D405A /* CTQuizMaster_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTQuizMaster_Tests.swift; sourceTree = "<group>"; };
 		B66CCE252B8F0ECE001D405A /* QuizViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel_Tests.swift; sourceTree = "<group>"; };
+		B6A1B3E92BAC909A005F6A67 /* CustomTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleLabel.swift; sourceTree = "<group>"; };
+		B6A1B3F62BACA0AC005F6A67 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		B6A1B3F82BACD45A005F6A67 /* UILabelVR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVR.swift; sourceTree = "<group>"; };
+		B6A1B3FE2BAF0539005F6A67 /* UIProfilePicVR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProfilePicVR.swift; sourceTree = "<group>"; };
 		B6B1E6B02B94BF5600704F02 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B6C72DB12BA04EAC00C0A932 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B6F0E4ED2B94C75B00D9062D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,12 +200,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B64E79092B94BDAD00CEA258 /* Profile */ = {
+		B64E79092B94BDAD00CEA258 /* ProfileUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B6B1E6B22B94BF6000704F02 /* View */,
+				B6A1B3F12BAC9743005F6A67 /* SwiftUIViews */,
+				B67201912BA0605D004EFEBA /* ViewRepresentable */,
+				B6C72DB02BA04E7700C0A932 /* ViewModel */,
+				B6B1E6B22B94BF6000704F02 /* CustomUIKitViews */,
 			);
-			path = Profile;
+			path = ProfileUIKit;
 			sourceTree = "<group>";
 		};
 		B657F2CD2B8C57820075DC5D = {
@@ -219,6 +234,7 @@
 		B657F2D82B8C57820075DC5D /* CTQuizMaster */ = {
 			isa = PBXGroup;
 			children = (
+				B6A1B3F52BACA088005F6A67 /* Extensions */,
 				B64E78F42B9077AA00CEA258 /* Managers */,
 				B64E78DB2B90557700CEA258 /* Resources */,
 				B657F2D92B8C57820075DC5D /* CTQuizMasterApp.swift */,
@@ -257,7 +273,7 @@
 		B657F2E92B8C5D2F0075DC5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B64E79092B94BDAD00CEA258 /* Profile */,
+				B64E79092B94BDAD00CEA258 /* ProfileUIKit */,
 				B64E79062B94BCF600CEA258 /* Auth */,
 				B64E79032B94BC7500CEA258 /* Quiz */,
 				B66CCE112B8EFEB4001D405A /* ViewModifiers */,
@@ -302,12 +318,62 @@
 			path = CTQuizMaster_Tests;
 			sourceTree = "<group>";
 		};
-		B6B1E6B22B94BF6000704F02 /* View */ = {
+		B67201912BA0605D004EFEBA /* ViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				B6A1B3F82BACD45A005F6A67 /* UILabelVR.swift */,
+				B6A1B3FE2BAF0539005F6A67 /* UIProfilePicVR.swift */,
+			);
+			path = ViewRepresentable;
+			sourceTree = "<group>";
+		};
+		B6A1B3EB2BAC95D1005F6A67 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B6A1B3E92BAC909A005F6A67 /* CustomTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		B6A1B3F12BAC9743005F6A67 /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
 				B6B1E6B02B94BF5600704F02 /* ProfileView.swift */,
+				B65B930E2B97507C00BEC5FE /* EditProfileView.swift */,
 			);
-			path = View;
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		B6A1B3F22BAC9BA7005F6A67 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		B6A1B3F52BACA088005F6A67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6A1B3F62BACA0AC005F6A67 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6B1E6B22B94BF6000704F02 /* CustomUIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				B6A1B3F22BAC9BA7005F6A67 /* ImageViews */,
+				B6A1B3EB2BAC95D1005F6A67 /* Labels */,
+			);
+			path = CustomUIKitViews;
+			sourceTree = "<group>";
+		};
+		B6C72DB02BA04E7700C0A932 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6C72DB12BA04EAC00C0A932 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +429,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					B657F2D52B8C57820075DC5D = {
 						CreatedOnToolsVersion = 15.2;
@@ -430,19 +496,25 @@
 				B657F2F12B8C7A360075DC5D /* QuizModel.swift in Sources */,
 				B64E78FA2B907C9D00CEA258 /* RootView.swift in Sources */,
 				B64E78EF2B90707D00CEA258 /* AuthView.swift in Sources */,
+				B65B930F2B97507C00BEC5FE /* EditProfileView.swift in Sources */,
 				B64E78F62B9077BC00CEA258 /* AuthManager.swift in Sources */,
+				B6A1B3F72BACA0AC005F6A67 /* Date+Ext.swift in Sources */,
 				B657F2ED2B8C5E4C0075DC5D /* QuizViewModel.swift in Sources */,
 				B6F0E4EE2B94C75B00D9062D /* UserManager.swift in Sources */,
 				B66CCE132B8EFEE5001D405A /* OptionButtonViewModifier.swift in Sources */,
 				B63F42342B8DF18700AF3270 /* HomeView.swift in Sources */,
 				B64E78F82B9078B000CEA258 /* AuthDataResModel.swift in Sources */,
 				B6B1E6B12B94BF5600704F02 /* ProfileView.swift in Sources */,
+				B6C72DB22BA04EAC00C0A932 /* ProfileViewModel.swift in Sources */,
 				B66CCE172B8F06A2001D405A /* BadgesViewModifier.swift in Sources */,
+				B6A1B3F92BACD45A005F6A67 /* UILabelVR.swift in Sources */,
 				B63F42362B8E051000AF3270 /* QuestionView.swift in Sources */,
 				B657F2DC2B8C57820075DC5D /* QuizView.swift in Sources */,
 				B657F2EF2B8C61010075DC5D /* QuizService.swift in Sources */,
 				B66CCE152B8F0076001D405A /* HomeButtonViewModifier.swift in Sources */,
 				B64E78F12B9075AC00CEA258 /* AuthViewModel.swift in Sources */,
+				B6A1B3EA2BAC909A005F6A67 /* CustomTitleLabel.swift in Sources */,
+				B6A1B3FF2BAF0539005F6A67 /* UIProfilePicVR.swift in Sources */,
 				B657F2DA2B8C57820075DC5D /* CTQuizMasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +556,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -547,6 +620,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

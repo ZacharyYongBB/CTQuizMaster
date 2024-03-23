@@ -37,10 +37,9 @@ final class AuthViewModel: ObservableObject {
             print("please enter email / password")
             return false
         }
-        
-        
         do {
             let returnedUserData = try await AuthManager.shared.signInUser(email: email, password: password)
+            print(returnedUserData)
             return true
         } catch {
             print("error : \(error)")
